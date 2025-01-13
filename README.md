@@ -18,7 +18,7 @@ Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.\nStep 1
 # Use it to train a LLM
 I use [LLaMa-factory](https://github.com/hiyouga/LLaMA-Factory) to train Qwen-2.5-0.5b-instruct to demonstrate it.
 I use gpt-4o to to determine if it is correct. The test dataset is 50.
-Model	| method	| Result (best step)
+Model	| Method	| Acc (best step)
 ---|---|---
 Qwen2.5-0.5	| w/o finetune	| 0% (-)
 Qwen2.5-0.5	| SFT with CoT	| 54% (2500)
