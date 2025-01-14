@@ -20,6 +20,7 @@ Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.\nStep 1
 # Use it to train a LLM
 I use [LLaMa-factory](https://github.com/hiyouga/LLaMA-Factory) to train Qwen-2.5-0.5b-instruct to demonstrate it, which is trained on my laptop.
 Training dataset size is 40,000, and batch size is 8 with LoRa. I set the learning rate to 1e-5.
+
 The test prompt is like
 ```
 Given the numbers 3, 7, 4, 5. Use numbers and basic arithmetic operations (+ - * /) to obtain24.\n
