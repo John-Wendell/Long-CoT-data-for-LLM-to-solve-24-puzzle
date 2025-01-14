@@ -5,14 +5,13 @@ It is a sft dataset for  training LLM to solve 24(puzzle)
 The code is modified from https://github.com/StephenA0/Challenge-24
 # CoT dataset
 run `24puzzle_cot.py` to get the CoT dataset.
-example:
+There is an example:
 ```
 Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.\nStep 1: The most reseaonable operation is (3 - 7),  which leave 4, 5 as the remaining numbers.\nStep 2: The most reseaonable operation is ((3 - 7) * 5),  which leave 4 as the remaining numbers.\nStep 3: The last operation should be (4 - ((3 - 7) * 5)).
 ```
 
 # Long CoT dataset （CoT with Reflection)
-run `24puzzle_longcot.py` to get the Long CoT dataset.
-example:
+run `24puzzle_longcot.py` to get the Long CoT dataset as follows
 ```
 Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.\nStep 1: The most reseaonable operation is (3 - 7),  which leave 4, 5 as the remaining numbers.\nStep 2: The most reseaonable operation is ((3 - 7) + 5),  which leave 4 as the remaining numbers.\nFianl Step: The last operation should be (((3 - 7) + 5) + 4).\nIt is wrong, let get back to the previous step2 and try another operation.\nNew Step 2: The most reseaonable operation is ((3 - 7) * 5),  which leave 4 as the remaining numbers.\nNew Final Step: The last operation should be (4 - ((3 - 7) * 5)).
 ```
