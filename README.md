@@ -32,8 +32,8 @@ Is the inference pipline right and the fianl-step calculation result 24? Please 
 Model	| Method	| Acc (best step)
 ---|---|---
 Qwen2.5-0.5	| w/o finetune	| 0% (-)
-Qwen2.5-0.5	| SFT with CoT	| 54% (2500)
-Qwen2.5-0.5	| SFT with Long CoT	| 78% (2000)
+Qwen2.5-0.5	| SFT with CoT data	| 54% (2500)
+Qwen2.5-0.5	| SFT with Long CoT data	| 78% (2000)
 
 ### the accuracy on test dataset
 ![metrics](compare.png) 
