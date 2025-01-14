@@ -19,7 +19,16 @@ Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.\nStep 1
 
 # Use it to train a LLM
 I use [LLaMa-factory](https://github.com/hiyouga/LLaMA-Factory) to train Qwen-2.5-0.5b-instruct to demonstrate it.
-I use gpt-4o to determine if thr result is correct. The size of test dataset is 50.
+
+The test prompt is like
+```
+Given the numbers 3, 7, 4, 5. Use numbers and basic arithmetic operations (+ - * /) to obtain24.\n
+```
+
+I use gpt-4o to determine if thr result is correct. The size of test dataset is 50. The evalation prompt is
+```
+Is the inference pipline right and the fianl-step calculation result 24? Please respond "Yes" or "No" only.
+```
 Model	| Method	| Acc (best step)
 ---|---|---
 Qwen2.5-0.5	| w/o finetune	| 0% (-)
