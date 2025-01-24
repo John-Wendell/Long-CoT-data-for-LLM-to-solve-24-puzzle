@@ -1,6 +1,6 @@
 # Long-CoT-data-for-LLM-to-solve-24-puzzle
 
-It is a sft dataset for  training LLM to solve 24(puzzle)
+It is a dataset for fine-tuning LLM to solve 24(puzzle)
 
 The code is modified from https://github.com/StephenA0/Challenge-24
 # CoT dataset
