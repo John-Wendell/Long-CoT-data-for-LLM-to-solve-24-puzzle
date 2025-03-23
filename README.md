@@ -8,8 +8,11 @@ run `24puzzle_cot.py` to get the CoT dataset.
 There is an example:
 
 > Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.
-> Step 1: The most reseaonable operation is (3 - 7),  which leave 4, 5 as the remaining numbers.
-> Step 2: The most reseaonable operation is ((3 - 7) * 5),  which leave 4 as the remaining numbers.
+> 
+> Step 1: The most reseaonable operation is (3 - 7),  which leaves 4, 5 as the remaining numbers.
+> 
+> Step 2: The most reseaonable operation is ((3 - 7) * 5),  which leaves 4 as the remaining numbers.
+> 
 > Step 3: The last operation should be (4 - ((3 - 7) * 5)).
 
 
@@ -18,15 +21,15 @@ run `24puzzle_longcot.py` to get the Long CoT dataset as follows
 
 > Given the numbers 3, 7, 4, 5, I should calculate step by step to get 24.
 > 
-> Step 1: The most reseaonable operation is (3 - 7),  which leave 4, 5 as the remaining numbers.
+> Step 1: The most reseaonable operation is (3 - 7),  which leaves 4, 5 as the remaining numbers.
 > 
-> Step 2: The most reseaonable operation is ((3 - 7) + 5),  which leave 4 as the remaining numbers.
+> Step 2: The most reseaonable operation is ((3 - 7) + 5),  which leaves 4 as the remaining numbers.
 > 
 > Fianl Step: The last operation should be (((3 - 7) + 5) + 4).
 > 
-> It is wrong, let get back to the previous step2 and try another operation.
+> It is wrong, let's get back to the previous step2 and try another operation.
 > 
-> New Step 2: The most reseaonable operation is ((3 - 7) * 5),  which leave 4 as the remaining numbers.
+> New Step 2: The most reseaonable operation is ((3 - 7) * 5),  which leaves 4 as the remaining numbers.
 > 
 > New Final Step: The last operation should be (4 - ((3 - 7) * 5)).
 
